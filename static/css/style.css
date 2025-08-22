@@ -206,4 +206,62 @@ h1 {
         flex-direction: column;
         align-items: center;
     }
+
+}
+
+
+/* 기본 PC용 (기존 스타일) */
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* 버튼 기본 스타일 */
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  margin: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* ----------------------------- */
+/* 모바일 (세로 9:16) 최적화 부분 */
+/* ----------------------------- */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;   /* 모바일은 글씨 조금 작게 */
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 22px;   /* 제목 크기 줄이기 */
+  }
+
+  button {
+    width: 90%;        /* 버튼을 가로 전체에 가깝게 */
+    font-size: 16px;   /* 버튼 텍스트 크기 조절 */
+    padding: 14px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 400px;  /* 스마트폰 화면 폭 제한 */
+    margin: auto;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
